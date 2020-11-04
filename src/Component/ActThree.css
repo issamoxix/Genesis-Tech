@@ -1,0 +1,41 @@
+.contact-container {
+  position: relative;
+  width: 95%;
+  height: 90%;
+  background-color: #ededed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px 3px 3px 3px;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "A A A A A A A B";
+}
+.img {
+  grid-area: A;
+  background-image: url("http://localhost:3000/pic/bg2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contact-body {
+  grid-area: B;
+}
+.contact-body h1 {
+  font-family: "Nunito", sans-serif;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.contact-form {
+  display: grid;
+  justify-content: center;
+  grid-gap: 5px;
+  margin-top: 20px;
+}
+.contact-form input {
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.contact-form input[type="submit"] {
+  cursor: pointer;
+}

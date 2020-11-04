@@ -1,0 +1,96 @@
+.container {
+  background-color: #ededed;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 95%;
+  height: 90vh;
+  box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px 3px 3px 3px;
+  display: grid;
+  grid-template-areas:
+    ". . . ."
+    "S1 S1 S2 S2"
+    ". . . ."
+    "X X X X";
+}
+.Description {
+  grid-area: S1;
+  width: 100vh;
+  margin: auto;
+}
+.Picture {
+  grid-area: S2;
+  margin: auto;
+}
+.Arrow-down {
+  grid-area: X;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Desc-container {
+  /* margin-top: 22%; */
+
+  /* margin-left: 10%; */
+}
+.Desc-container h1 {
+  font-family: Saira Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 790%;
+  line-height: 206px;
+}
+.Desc-container p {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 263%;
+  line-height: 52px;
+}
+.Pic-container {
+  /* margin-top: 22%; */
+
+  /* margin-left: 10%; */
+}
+.Pic-container img {
+  width: 70vh;
+}
+.Desc-container button {
+  background: rgb(42 121 243 / 88%);
+  border-radius: 16px;
+  width: 613px;
+  height: 71px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 39px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: 250ms;
+}
+.Desc-container button:hover {
+  color: rgb(163 175 195);
+  background-color: rgb(118 54 245 / 83%);
+}
+.Arrow-down img {
+  cursor: pointer;
+  position: absolute;
+  transition: top 950ms;
+  bottom: 1em;
+  animation: JumpDown 2s infinite;
+}
+@keyframes JumpDown {
+  from {
+    bottom: 1em;
+  }
+  50% {
+    bottom: 0em;
+  }
+  to {
+    bottom: 1em;
+  }
+}
