@@ -2,34 +2,37 @@
   position: relative;
   width: 95%;
   height: 90%;
-  background-color: #ededed;
+  background-color: #15a7e6;
+
   background-size: contain;
   background-repeat: no-repeat;
-  box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
   border-radius: 3px 3px 3px 3px;
   margin: auto;
-  display: grid;
-  grid-template-areas: "A A A A A A A B";
 }
 .img {
-  grid-area: A;
   background-image: url("http://localhost:3000/pic/bg2.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 .contact-body {
-  grid-area: B;
+  background-color: #00000073;
+  display: block;
+  width: 70%;
+  height: 100%;
+  margin: auto;
 }
 .contact-body h1 {
-  font-family: "Nunito", sans-serif;
+  font-family: Saira Condensed;
   text-decoration: underline;
   text-underline-position: under;
+  color: white;
+  text-align: center;
 }
 .contact-form {
   display: grid;
   justify-content: center;
   grid-gap: 5px;
-  margin-top: 20px;
 }
 .contact-form input {
   font-size: 20px;
@@ -38,4 +41,22 @@
 }
 .contact-form input[type="submit"] {
   cursor: pointer;
+  border: none;
+  background-color: #479bbf;
+  color: white;
+  font-size: 20px;
+}
+.hands {
+  display: block;
+  margin: auto;
+  height: 100%;
+  width: 50%;
+  background-image: url("http://localhost:3000/pic/nice.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-form textarea {
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 15px;
 }
