@@ -8,7 +8,7 @@
   margin: auto;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 150px auto;
+  grid-template-rows: 120px auto;
 }
 .Services-title h1 {
   font-family: Saira Condensed;
