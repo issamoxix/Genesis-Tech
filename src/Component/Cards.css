@@ -1,39 +1,22 @@
 .Card {
-  border-bottom: 1px solid white;
-  border-left: 1px solid black;
-  background-color: #d6e7ef;
+  border: none;
+  background-color: #035f87;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1px auto;
 }
-.Card h2 {
+.Card-title {
+  color: white;
+  font-family: Saira Condensed;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 12px;
 }
-.Card p {
-  text-align: start;
-  font-family: "Raleway", sans-serif;
-  padding-left: 13px;
-}
-.Card img {
+.Card-body {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
-.Card button {
   margin: auto;
-  display: block;
-  margin-top: 10px;
-  background-color: transparent;
-  font-size: 30px;
-  border-radius: 14px 0px 13px;
-  padding: 10px;
-  border-color: grey;
-  cursor: pointer;
-  transition: 500ms;
+  width: 70%;
 }
-.Card button:hover {
-  background-color: #1a9ba9d9;
-  border-color: transparent;
+.Card-body p {
+  font-family: sans-serif;
   color: white;
 }
