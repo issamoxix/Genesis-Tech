@@ -72,7 +72,7 @@
   font-size: 39px;
   cursor: pointer;
   color: #ffffff;
-  transition: background-color 0.2s liear;
+  transition: background-color 0.2s linear;
 }
 .Desc-container button:hover {
   background-color: #15a7e6;
