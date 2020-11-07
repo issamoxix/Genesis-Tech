@@ -1,5 +1,6 @@
 import React from 'react';
-import "./ActTwo.css"
+import "./ActTwo.css";
+import './ActTwo_mob.css';
 import Cards from './Cards'
 function ActTwo(){
     return (

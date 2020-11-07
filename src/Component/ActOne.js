@@ -1,5 +1,6 @@
-import React from 'react';
+import React , {useState,useEffect} from  'react';
 import "./ActOne.css";
+import "./ActOne_mob.css";
 
 function ActOne(){
     const scroll_to_services = ()=>{
@@ -7,6 +8,17 @@ function ActOne(){
         if(!Services_y) return false
         window.scrollTo(0,Services_y-5)
     }
+    const [img,setimg] = useState("./pic/pic1.png")
+    const change_img = ()=>{
+        if(window.innerWidth <= 600){
+            setimg("./pic/bgp.png")
+        }else {
+            setimg("./pic/pic1.png")
+        }
+    }
+    useEffect(()=>{
+        change_img()
+    },[])
     return (
         <div className="container">
             <div className="Description">
@@ -20,7 +32,7 @@ function ActOne(){
             </div>
             <div className="Picture">
                 <div className="Pic-container">
-                    <img src="./pic/pic1.png" alt="Working ..." />
+                    <img src={img} alt="Working ..." />
                 </div>
             </div>
             <div className="Arrow-down">

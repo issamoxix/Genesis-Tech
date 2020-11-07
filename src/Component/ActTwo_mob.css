@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px) {
+  .Services-container {
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .Services-body {
+    grid-template-areas: "A";
+    grid-template-columns: 71vw;
+    margin: auto;
+    grid-auto-rows: 20vh;
+    margin-bottom: 20px;
+  }
+  .Card {
+    grid-template-columns: auto;
+    grid-template-rows: 6vh 5vh;
+  }
+  .Services-title h1 {
+    font-family: Saira Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: normal;
+    color: white;
+    width: 90vw;
+  }
+}

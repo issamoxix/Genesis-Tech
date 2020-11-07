@@ -5,20 +5,22 @@ import "./ActThree.css"
 function ActThree(){
     return (
         <div className="contact-container">
-            <div className="hands">
-                <div className="contact-body">
-                    <h1>Contact Nous</h1>
-                    <div className="contact-form" >
-                        
-                        <input type="text" placeholder="Nome et Prenom" required />
-                        <input type="email" placeholder="Email" required />
-                        <input type="text" placeholder="Suject" required />
-                        <textarea rows="12" cols="10"></textarea>
-                        <input type="submit" value="Send" />
-
-                    </div>
-                </div>
+            
+            <div className="contact-body">
+                <h1>Contact us </h1>
+                <p>Contact us with your idea or prokect 
+let’s work togheter !</p>
             </div>
+            <form>
+            <div className="contact-form">
+                <input type="text" placeholder="Username" required />
+                <input type="email" placeholder="Email" required/>
+                <textarea placeholder="Your Message" cols="20" rows="10" ></textarea>
+                <button>Submit
+          
+                </button>
+            </div>
+            </form>
         </div>
     )
 }
