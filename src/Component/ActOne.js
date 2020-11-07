@@ -8,16 +8,22 @@ function ActOne(){
         if(!Services_y) return false
         window.scrollTo(0,Services_y-5)
     }
+    
     const [img,setimg] = useState("./pic/pic1.png")
     const change_img = ()=>{
         if(window.innerWidth <= 600){
+            
             setimg("./pic/bgp.png")
         }else {
             setimg("./pic/pic1.png")
         }
     }
+    
     useEffect(()=>{
         change_img()
+        window.addEventListener('resize',()=>{change_img()})
+        
+    
     },[])
     return (
         <div className="container">

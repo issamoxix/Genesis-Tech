@@ -89,17 +89,30 @@ textarea::placeholder {
   border: 3px solid #15a7e6;
 }
 
-.hands {
-  display: block;
-  margin: auto;
-  height: 100%;
-  width: 50%;
-  background-image: url("http://localhost:3000/pic/nice.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .contact-form textarea {
   padding: 10px;
   font-family: sans-serif;
   font-size: 15px;
+}
+@media only screen and (max-width: 600px) {
+  .Contact {
+    margin-bottom: 20px;
+    margin-top: 400px;
+  }
+  .contact-container {
+    width: 95%;
+    height: auto;
+  }
+  .contact-body p {
+    display: none;
+  }
+  .contact-form button {
+    margin-top: 10px;
+    width: 31vw;
+    margin-bottom: 20px;
+  }
+  .contact-form input[type="text"],
+  input[type="email"] {
+    width: 62vw;
+  }
 }
