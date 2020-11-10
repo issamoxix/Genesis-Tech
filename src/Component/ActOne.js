@@ -1,7 +1,7 @@
 import React , {useState,useEffect} from  'react';
 import "./ActOne.css";
 import "./ActOne_mob.css";
-
+import {Home} from '../data/Home'
 function ActOne(){
     const scroll_to_services = ()=>{
         const Services_y = document.getElementById('Services')?document.getElementById('Services').getBoundingClientRect().y:false
@@ -25,15 +25,14 @@ function ActOne(){
         
     
     },[])
+    
     return (
         <div className="container">
             <div className="Description">
                 <div className="Desc-container">
-                    <h1 className="Title">Genesis Tech</h1>
-                    <p>Nous nous spécialisons dans 
-                        la création de sites 
-                            Web professionnels et personnalisés.</p>
-                            <button>En savoir plus</button>
+                    <h1 className="Title">{Home.title}</h1>
+                            <p>{Home.description}</p>
+                            <button>Offers !!</button>
                 </div>
             </div>
             <div className="Picture">

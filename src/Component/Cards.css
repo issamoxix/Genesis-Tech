@@ -5,6 +5,11 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 1px auto;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.Card:hover {
+  box-shadow: 5px 5px 5px 5px #15a7e6;
 }
 .Card-title {
   color: white;

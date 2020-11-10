@@ -72,6 +72,8 @@
   font-size: 39px;
   cursor: pointer;
   color: #ffffff;
+  outline: none;
+  border-color: transparent;
   transition: background-color 0.2s linear;
 }
 .Desc-container button:hover {
