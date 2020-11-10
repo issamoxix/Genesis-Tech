@@ -25,3 +25,8 @@
   font-family: sans-serif;
   color: white;
 }
+@media only screen and (max-width: 600px) {
+  .Card {
+    grid-template-rows: 31px auto;
+  }
+}
