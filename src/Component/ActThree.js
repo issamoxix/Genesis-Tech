@@ -8,7 +8,7 @@ function ActThree(){
             
             <div className="contact-body">
                 <h1>Contact us </h1>
-                <p>Contact us with your idea or prokect 
+                <p>Contact us with your idea or project 
 let’s work togheter !</p>
             </div>
             <form>
