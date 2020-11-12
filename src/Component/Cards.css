@@ -22,7 +22,7 @@
   width: 70%;
 }
 .Card-body p {
-  font-family: sans-serif;
+  font-family: "Roboto Condensed";
   color: white;
 }
 @media only screen and (max-width: 600px) {

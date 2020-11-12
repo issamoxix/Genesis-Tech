@@ -33,10 +33,9 @@ function NavBar(){
         transition:"opacity 100ms",
         opacity:1
     }
-    const scroll_To = (To)=>{
-        const coor = document.getElementById(To)?document.getElementById(To).getBoundingClientRect().y:false
-        console.log(coor)
-        window.scrollTo(0,coor)
+    const scroll_To = (to)=>{
+        const elem = document.getElementById(to)
+        elem.scrollIntoView()
     }
     return(
         <div className="NavBar">
@@ -47,10 +46,12 @@ function NavBar(){
                         <img src="./pic/icon2.png" onClick={(e)=>{scroll_To('Home')}} style={ck?show_naav:hide_nav} alt="Home" /> 
                     </li>
                     <li>
-                        <img src="./pic/icon3.png" onClick={(e)=>{scroll_To('Contact')}} style={ck?show_naav1:hide_nav} alt="About" />
+                        <img src="./pic/icon3.png" onClick={(e)=>{scroll_To('Contact')}} style={ck?show_naav2:hide_nav} alt="Contact" />
                     </li>
                     <li>
-                        <img src="./pic/icon4.png" onClick={(e)=>{scroll_To('Services')}} style={ck?show_naav2:hide_nav} alt="Contact" />
+                        
+                        <img src="./pic/icon4.png" onClick={(e)=>{scroll_To('Services')}}  style={ck?show_naav1:hide_nav} alt="About" />
+                        
                     </li>
                 </ul>
             </div>
